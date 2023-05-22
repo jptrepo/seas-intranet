@@ -1,0 +1,27 @@
+---
+import Navbar from "../components/nav/navbar.astro";
+import ChatButton from "../components/chat/chatbutton.astro";
+import Footer from "../components/layout/footer.astro";
+import HeaderBar from "../components/layout/header.astro";
+const { title } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body>
+    <Navbar />
+    <HeaderBar headertitle={title} />
+    <section id="body"></section>
+    <section class="py-20 bg-white">
+      <slot id="mainContent" />
+    </section>
+    <ChatButton />
+    <Footer />
+  </body>
+</html>

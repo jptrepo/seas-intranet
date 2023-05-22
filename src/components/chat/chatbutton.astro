@@ -1,0 +1,20 @@
+---
+---
+
+<button
+  title="Chat with SEAS"
+  id="chatbtn"
+  class="fixed z-90 bottom-10 right-8 bg-orange-600 w-16 h-16 rounded-full drop-shadow-xl flex justify-center items-center text-white text-2xl hover:bg-orange-500 hover:drop-shadow-2xl hover:animate-bounce hover:cursor-pointer duration-600"
+>
+  &#128172;</button
+>
+
+<script>
+  // Get buttons with chatbtn
+  const mychatbtn = document.querySelector("button#chatbtn");
+  if (mychatbtn) {
+    mychatbtn.addEventListener("click", () => {
+      alert("clicked chat button");
+    });
+  }
+</script>
