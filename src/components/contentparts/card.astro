@@ -1,0 +1,21 @@
+---
+//define component props
+import { Icon } from "astro-icon";
+const { icon, title, description, link } = Astro.props;
+---
+
+<div
+  class="flex flex-col items-center justify-between col-span-4 px-8 py-12 space-y-2 overflow-hidden bg-gray-100 sm:rounded-xl"
+  data-rounded="rounded-xl"
+  data-rounded-max="rounded-full"
+>
+  <div
+    class="p-3 text-white bg-blue-500 rounded-full"
+    data-primary="blue-500"
+    data-rounded="rounded-full"
+  >
+    <Icon name={icon} class="w-6 h-6" />
+  </div>
+  <h4 class="text-xl font-medium text-gray-700">{title}</h4>
+  <p class="text-base text-center text-gray-500">{description}</p>
+</div>
