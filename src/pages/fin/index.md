@@ -1,10 +1,9 @@
 ---
 layout: "../../layouts/sidebarBothLayout.astro"
 title: "My Markdown page"
-nav: "finance"
+nav: "Finances"
+tags: ["astro", "blogging", "learning in public"]
 ---
-
-# About UVA's School of Engineering
 
 The University of Virginia's School of Engineering and Applied Science is the third oldest engineering school in a public university in the United States. The Engineering School combines research and educational opportunities at the undergraduate and graduate levels.
 
