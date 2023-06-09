@@ -1,0 +1,15 @@
+---
+//define component props
+import { Icon } from "astro-icon";
+const { icon, title } = Astro.props;
+---
+
+<div class="px-8 pb-4">
+  <div
+    class="flex items-center bg-red-700 text-white text-sm font-bold px-4 py-3 h-10"
+    role="alert"
+  >
+    <Icon name={icon} class="w-4 h-4 fill-yellow-50" />
+    <p>{title}</p>
+  </div>
+</div>
