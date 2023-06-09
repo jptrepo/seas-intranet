@@ -1,0 +1,40 @@
+---
+import Card from "../../components/contentparts/card.astro";
+import MySiteLayout from "../../layouts/nosidebarLayout.astro";
+import Alert from "../../components/contentparts/alert.astro";
+---
+
+<MySiteLayout title="FACILITIES & SPACE HOME">
+  <div class="container max-w-6xl mx-auto py-4">
+    <Alert icon="info-alert" title="Watch out!!" />
+    <div class="grid grid-cols-3 gap-8 sm:px-8 xl:px-0">
+      <div class="col-span-2 grid grid-cols-2 gap-8">
+        <Card
+          icon="building"
+          title="Policies/SOPs"
+          description="Reserve Space, Request Service, Custodial Services, Report an outage"
+          colSpan="1"
+        />
+        <Card
+          icon="document-text"
+          title="Document Directory"
+          description="Policies, procedures, handbooks, forms"
+        />
+        <Card
+          icon="computer"
+          title="Services Requests"
+          description="How to request services"
+        />
+        <Card
+          icon="computer"
+          title="Renovations/Moves"
+          description="Announcements about construction and renovation updates"
+        />
+      </div>
+      <div class="col-span-1">
+        <h2>Facilities Update Feed</h2>
+        {/* Add your content here for the remaining 1/3 of the space */}
+      </div>
+    </div>
+  </div>
+</MySiteLayout>

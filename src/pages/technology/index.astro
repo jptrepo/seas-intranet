@@ -1,11 +1,13 @@
 ---
-import Card from "../components/contentparts/card.astro";
-import MySiteLayout from "../layouts/nosidebarLayout.astro";
+import Card from "../../components/contentparts/card.astro";
+import MySiteLayout from "../../layouts/nosidebarLayout.astro";
 ---
 
 <MySiteLayout title="SEAS INTRANET HOME">
   <div class="container max-w-6xl mx-auto py-12">
-    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4 sm:px-4">
+    <div
+      class="grid grid-cols-4 gap-8 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0"
+    >
       <Card
         icon="building"
         title="Facilities"
@@ -19,7 +21,7 @@ import MySiteLayout from "../layouts/nosidebarLayout.astro";
       <Card
         icon="computer"
         title="Technology Services"
-        description="Hardware and software, License procurement"
+        description="Hardware and software, License procurement, Virtual Classrooms, Security, Research computing, and data analytics"
       />
       <Card
         icon="finance"
