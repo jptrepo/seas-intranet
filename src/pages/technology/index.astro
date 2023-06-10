@@ -1,43 +1,34 @@
 ---
 import Card from "../../components/contentparts/card.astro";
 import MySiteLayout from "../../layouts/nosidebarLayout.astro";
+import Grid from "../../components/layout/grid.astro";
+
+const cards = [
+  {
+    icon: "building",
+    title: "Facilities",
+    description: "Space and facilities",
+  },
+  {
+    icon: "computer",
+    title: "Technology Services",
+    description: "IT user support and data analytics",
+  },
+  {
+    icon: "finance",
+    title: "Budget & Finance",
+    description: "Budget, ETF, Workday",
+  },
+  {
+    icon: "academic",
+    title: "Faculty & Staff",
+    description: "Who's who, Committees, HR Resources",
+  },
+];
 ---
 
 <MySiteLayout title="SEAS INTRANET HOME">
   <div class="container max-w-6xl mx-auto py-12">
-    <div
-      class="grid grid-cols-4 gap-8 sm:grid-cols-8 lg:grid-cols-12 sm:px-8 xl:px-0"
-    >
-      <Card
-        icon="building"
-        title="Facilities"
-        description="Reserve Space, Request Service, Custodial Services, Report an outage"
-      />
-      <Card
-        icon="document-text"
-        title="Document Directory"
-        description="Policies, procedures, handbooks, forms"
-      />
-      <Card
-        icon="computer"
-        title="Technology Services"
-        description="Hardware and software, License procurement, Virtual Classrooms, Security, Research computing, and data analytics"
-      />
-      <Card
-        icon="finance"
-        title="Budget & Finance"
-        description="Budget, ETF, Workday"
-      />
-      <Card
-        icon="academic"
-        title="Faculty & Staff"
-        description="Who's who, Committees, HR Resources"
-      />
-      <Card
-        icon="chat"
-        title="SEAS Social"
-        description="Social media wall and internal postings"
-      />
-    </div>
+    <Grid cards={cards} />
   </div>
 </MySiteLayout>

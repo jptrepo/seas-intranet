@@ -1,0 +1,22 @@
+---
+import Card from "../contentparts/card.astro";
+
+interface CardProps {
+  icon: string;
+  title: string;
+  description: string;
+}
+const cards: CardProps[] = Astro.props.cards;
+---
+
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 lg:grid-cols-4 sm:px-4">
+  {
+    cards.map((card) => (
+      <Card
+        icon={card.icon}
+        title={card.title}
+        description={card.description}
+      />
+    ))
+  }
+</div>
