@@ -5,6 +5,7 @@ interface CardProps {
   icon: string;
   title: string;
   description: string;
+  colSpan?: number;
 }
 const cards: CardProps[] = Astro.props.cards;
 ---
@@ -16,6 +17,7 @@ const cards: CardProps[] = Astro.props.cards;
         icon={card.icon}
         title={card.title}
         description={card.description}
+        {...(card.colSpan && { colSpan: card.colSpan })}
       />
     ))
   }
